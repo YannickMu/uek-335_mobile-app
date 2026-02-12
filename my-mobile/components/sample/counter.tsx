@@ -27,7 +27,7 @@ export default function Counter() {
                         setMax(undefined);
                         return;
                     }
-                    setMax(Number(text));
+                    setMax(parseInt(text));
                 }} keyboardType={"number-pad"} style={{
                     borderWidth: 1,
                     borderColor: "#3498db",
