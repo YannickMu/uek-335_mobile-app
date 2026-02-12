@@ -8,13 +8,14 @@ export default function App() {
   return (
       <SafeAreaProvider>
           <SafeAreaView style={styles.container}>
+              <StatusBar style="auto" />
+              <Text style={{fontSize: 34, color: Colors.black, marginVertical: 24, marginHorizontal: 16, fontWeight: "bold"}}>Employeelist</Text>
               <ScrollView>
                   <ProfileCard name={"Peter Erikson"} picture={"https://i.pravatar.cc/300?img=3"} role={"System Engineer"} location={"CH, St. Gallen"} />
                   <ProfileCard name={"Sara Steiner"} picture={"https://i.pravatar.cc/300?img=32"} role={"Chief of Social Media"} location={"CH, Zürich"} />
                   <ProfileCard name={"Nibor Rellatsgrub"} picture={"https://i.pravatar.cc/300?img=5"} role={"Software Developer"} location={"CH, St. Gallen"} />
-                  <ProfileCard name={"Divad Namjioom"} picture={"https://i.pravatar.cc/300?img=0"} role={"Software Developer"} location={"CH, St. Gallen"} />
+                  <ProfileCard name={"Divad Namjioom"} picture={"https://i.pravatar.cc/300?img=0"} role={"Software Developer"} location={"CH, St. Gallen"} style={{marginBottom: 120}} />
               </ScrollView>
-              <StatusBar style="auto" />
           </SafeAreaView>
       </SafeAreaProvider>
   );

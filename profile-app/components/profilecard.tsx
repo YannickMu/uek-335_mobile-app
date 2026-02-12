@@ -1,4 +1,4 @@
-import {Image, ScrollView, StyleSheet, Text, View} from "react-native";
+import {Image, ScrollView, StyleSheet, Text, View, ViewStyle} from "react-native";
 import Colors from "../constants/Colors";
 import {SafeAreaView} from "react-native-safe-area-context";
 
@@ -7,6 +7,7 @@ interface ProfileCardProps {
     picture: string;
     role: string;
     location: string;
+    style: ViewStyle | undefined;
 }
 
 const styles = StyleSheet.create({
@@ -51,9 +52,9 @@ const styles = StyleSheet.create({
     }
 });
 
-export default function ProfileCard({name, picture, role, location}: ProfileCardProps) {
+export default function ProfileCard({name, picture, role, location, style}: ProfileCardProps) {
     return(
-        <View style={styles.card}>
+        <View style={[styles.card, style]}>
             <Image source={{uri: picture}} style={styles.picture} />
             <Text style={styles.name}>{name}</Text>
             <Text style={styles.job}>{role}</Text>
