@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
 
 export default function UserTabScreen() {
     return (
-        <ParallaxScrollView headerImage={<Image source={{uri: "https://i.pravatar.cc/300?img=9"}} style={styles.headerImage}/>} headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}>
+        <ParallaxScrollView headerImage={<Image source={{uri: "https://i.pravatar.cc/300?img=0"}} style={styles.headerImage}/>} headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}>
             <ThemedView style={styles.titleContainer}>
                 <ThemedText
                     type="title"
