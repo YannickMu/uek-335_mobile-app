@@ -17,6 +17,19 @@ const tabs = [
         icon: "trail-sign-outline"
     },
     {
+        title: "Robots",
+        name: "robots/index",
+        iconFocused: "skull",
+        icon: "skull-outline"
+    },
+    {
+        title: "Robot Details",
+        name: "robots/[id]",
+        iconFocused: "skull",
+        icon: "skull-outline",
+        href: null
+    },
+    {
         title: "Favourites",
         name: "favourites/index",
         iconFocused: "heart",
@@ -38,6 +51,7 @@ export default function HomeLayout() {
                     return(
                         <Tabs.Screen key={tab.name} name={tab.name} options={{
                             title: tab.title,
+                            href: tab.href,
                             tabBarIcon: ({ color, focused }) => (
                                 <BottomNavIcon icon={focused ? tab.iconFocused : tab.icon} color={color} />
                             ),
