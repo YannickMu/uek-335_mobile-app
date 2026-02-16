@@ -1,6 +1,7 @@
 import { Tabs } from "expo-router"
 import Ionicons from "@expo/vector-icons/Ionicons"
 import BottomNavIcon from "../../components/BottomNavIcon";
+import {BlurView} from "expo-blur";
 
 const tabs = [
     {
@@ -40,6 +41,9 @@ export default function HomeLayout() {
                             tabBarIcon: ({ color, focused }) => (
                                 <BottomNavIcon icon={focused ? tab.iconFocused : tab.icon} color={color} />
                             ),
+                            tabBarBackground: () => (
+                                <BlurView tint="dark" intensity={100} style={{}} />
+                            )
                         }}/>
                     )
                 })
