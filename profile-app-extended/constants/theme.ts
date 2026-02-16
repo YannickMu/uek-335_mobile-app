@@ -11,7 +11,6 @@ const tintColorDark = '#fff';
 export const Colors = {
   light: {
     text: '#11181C',
-    background: '#fff',
     tint: tintColorLight,
     icon: '#687076',
     tabIconDefault: '#687076',
@@ -25,6 +24,13 @@ export const Colors = {
     tabIconDefault: '#9BA1A6',
     tabIconSelected: tintColorDark,
   },
+    white: '#ffffff',
+    black: '#222222',
+    primary: '#5568fe',
+    secondary: '#eef1f6',
+    textSecondary: '#5a5f73',
+    textMuted: '#9aa0b4',
+    border: '#e0e4ee',
 };
 
 export const Fonts = Platform.select({

@@ -5,6 +5,7 @@ import {ThemedView} from "@/components/themed-view";
 import {Fonts} from "@/constants/theme";
 import {ThemedText} from "@/components/themed-text";
 import {Image} from "expo-image";
+import ProfileCard from "@/components/profilecard";
 
 const styles = StyleSheet.create({
     headerImage: {
@@ -30,6 +31,7 @@ export default function UserTabScreen() {
                     }}>
                     Profile
                 </ThemedText>
+                <ProfileCard name={"Nibor Rellatsgrub"} picture={"https://i.pravatar.cc/300?img=5"} role={"Software Developer"} location={"CH, St. Gallen"} style={{}} />
             </ThemedView>
         </ParallaxScrollView>
     )
